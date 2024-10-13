@@ -2,121 +2,216 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hockey Website</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/4f0994ff27.js" crossorigin="anonymous"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#FF4240',
-                        'bg-primary': '#FF4240'                   
-                    }
-                }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hockey Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/4f0994ff27.js" crossorigin="anonymous"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#FF4240',
+            'bg-text-primary': '#FF4240'
+          }
         }
-    </script>
+      }
+    }
+  </script>
 </head>
 
 <body>
-    <nav class="container mx-auto">
-        <div class="navbar bg-base-100">
-            <div class="flex flex-row-reverse navbar-start lg:flex-row"> 
-              <div>
-                <h4 class="font-bold text-3xl">Hockey <span class="text-bg-primary">'</span>s</h4>
-              </div>
-              <div class="dropdown lg:hidden">
-                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h16M4 18h7" />
-                  </svg>
+  <nav class="container mx-auto">
+    <div class="navbar bg-base-100">
+      <div class="flex flex-row-reverse navbar-start lg:flex-row">
+        <div>
+          <h4 class="font-bold text-3xl">Hockey <span class="text-bg-text-primary">'</span>s</h4>
+        </div>
+        <div class="dropdown lg:hidden">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="hidden navbar-center gap-8 lg:flex lg:justify-center">
+        <a class="text-[#FF4240]" href="">Home</a>
+        <a href="">About</a>
+        <a href="">Pages</a>
+        <a href="">Blog</a>
+        <a href="">Contact</a>
+      </div>
+      <div class="navbar-end">
+        <button class="hidden btn btn-ghost btn-circle lg:flex">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </button>
+        <button class="btn btn-ghost bg-[#FF4240] text-white font-bold">
+          Get Ticket
+        </button>
+      </div>
+    </div>
+  </nav>
+  <main class="container mx-auto">
+    <banner class="lg:relative">
+      <div class="carousel h-screen w-full mt-16 ">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-full" />
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="Images/2.png" class="w-full" />
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-black text-white mt-4 ml-2 mr-2 rounded-lg p-4 lg:w-1/2 lg:absolute bottom-8 right-8">
+        <h4 class="font-bold text-2xl pb-3">Meet all the heros from the field</h4>
+        <p class="text-gray-300">Hockey is a term used to denote a family of various types of both summer and winter
+          team sports <br> which originated on either an outdoor field</p>
+      </div>
+    </banner>
+    <!-- Professional Hockey's Club-->
+
+    <section class="mt-16">
+      <div class="border-x-gray-400 border-y-1 border-dashed border"></div>
+      <h4 class="font-bold text-3xl mt-5 mb-5 text-center">Professional Hockeys Club</h4>
+      <p class="text-gray-400 text-center mb-5">Hockey is a term used to denote a family of various types of both summer
+        and winter team sports <br> which originated on either an outdoor field</p>
+      <div class="border-x-gray-400 border-y-1 border-dashed border mb-5"></div>
+
+      <div class="flex flex-col justify-center mt-10 mb-16 lg:flex-row">  
+        <div>
+           <div class="flex justify-center">
+            <div class="radial-progress text-bg-text-primary" style="--value:87;" role="progressbar">87%</div>
+           </div>
+
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Experienced Coach</h2>
+          <p> Amet consectetur Condimentum <br>
+            dignissim adipiscing.</p>
+          </div>
+        </div>
+        <div>
+           <div class="flex justify-center">
+            <div class="radial-progress text-green-400" style="--value:95;" role="progressbar">95%</div>
+           </div>
+
+        <div class="card-body items-center text-center">
+          <h2 class="card-title"> Senior Player</h2>
+          <p> Amet consectetur Condimentum <br>
+            dignissim adipiscing.</p>
+          </div>
+        </div>
+        <div>
+           <div class="flex justify-center">
+            <div class="radial-progress text-amber-400" style="--value:90;" role="progressbar">90%</div>
+           </div>
+
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Training Ground</h2>
+          <p> Amet consectetur Condimentum <br>
+            dignissim adipiscing.</p>
+          </div>
+        </div>
+        <div>
+           <div class="flex justify-center">
+            <div class="radial-progress text-blue-400 " style="--value:80;" role="progressbar">80%</div>
+           </div>
+
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Player facility</h2>
+          <p> Amet consectetur Condimentum <br>
+            dignissim adipiscing.</p>
+          </div>
+        </div>
+      </div>
+      <div class="border-x-gray-400 border-y-1 border-dashed border"></div>
+    </section>
+    <!-- Programme Section -->
+     <section class="mt-16">
+      <h4 class="text-center font-bold text-3xl pb-3">Programme Sections</h4>
+        <p class="text-gray-400 text-center pb-5">Hockey is a term used to denote a family of various types of both summer and winter
+          team sports <br> which originated on either an outdoor field</p>
+          <div class="border-x-gray-400 border-y-1 border-dashed border"></div>
+
+          <div class="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="card bg-base-100 image-full  ">
+              <figure>
+                <img class="w-full h-cover"
+                  src="./Images/2.png"
+                  alt="" />
+              </figure>
+              <div class="card-body">
+                <h2 class="font-bold lg:pt-40 text-xl">Junior Program</h2>
+                <p class="pb-2">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit <br>
+                  enim sagittis turpis in magna. Id et sed euismod natoque amet <br>
+                  nunc morbi nulla. Tortor congue sed et in.</p>
+               
+                 <div>
+                  <button class="text-white bg-bg-text-primary rounded-lg border-2-none p-4">Register Now!</button>
                 </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li><a>Home</a></li>
-                  <li><a>About</a></li>
-                  <li><a>Pages</a></li>
-                  <li><a>Blog</a></li>
-                  <li><a>Contact</a></li>
-                </ul>
-              </div>
+                  
+                </div>
             </div>
-            <div class="hidden navbar-center gap-8 lg:flex lg:justify-center">
-             <a class="text-[#FF4240]" href="">Home</a>
-             <a href="">About</a>
-            <a href="">Pages</a>
-            <a href="">Blog</a>
-            <a href="">Contact</a>
+            <div class="card bg-base-100 image-full ">
+              <figure>
+                <img class="w-full h-cover"
+                  src="./Images/3.png"
+                  alt="" />
+              </figure>
+              <div class="card-body">
+                <h2 class="font-bold lg:pt-40 text-xl">Teenager Program</h2>
+                <p class="pb-2">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit <br>
+                  enim sagittis turpis in magna. Id et sed euismod natoque amet <br>
+                  nunc morbi nulla. Tortor congue sed et in.</p>
+               
+                 <div>
+                  <button class="text-white bg-bg-text-primary rounded-lg border-2-none p-4">Register Now!</button>
+                </div>
+                  
+                </div>
             </div>
-            <div class="navbar-end">
-              <button class="hidden btn btn-ghost btn-circle lg:flex">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-              </button>
-              <button class="btn btn-ghost bg-[#FF4240] text-white font-bold">
-                Get Ticket
-              </button>
-            </div>
-          </div>
-    </nav>
-    <main class="container mx-auto">
-      <banner class="relative">
-        <div class="carousel h-screen w-full mt-16 ">
-          <div id="slide1" class="carousel-item relative w-full">
-            <img
-              src="Images/1.png"
-             class="w-full" />
-            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide2" class="btn btn-circle">❮</a>
-              <a href="#slide2" class="btn btn-circle">❯</a>
+            <div class="card bg-base-100 image-full  grid lg:col-span-2">
+              <figure>
+                <img class="w-full h-cover"
+                  src="./Images/4.png"
+                  alt="" />
+              </figure>
+              <div class="card-body">
+                <h2 class="font-bold lg:pt-80 text-xl">Professional Program</h2>
+                <p class="pb-2">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit <br>
+                  enim sagittis turpis in magna. Id et sed euismod natoque amet <br>
+                  nunc morbi nulla. Tortor congue sed et in.</p>
+               
+                 <div>
+                  <button class="text-white bg-bg-text-primary rounded-lg border-2-none p-4">Register Now!</button>
+                </div>
+                  
+                </div>
             </div>
           </div>
-          <div id="slide2" class="carousel-item relative w-full">
-            <img
-              src="Images/2.png"
-              class="w-full" />
-            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide1" class="btn btn-circle">❮</a>
-              <a href="#slide1" class="btn btn-circle">❯</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-black text-white rounded-lg p-4 w-1/2 absolute bottom-8 right-8">
-          <h4 class="font-bold text-2xl pb-3">Meet all the heros from the field</h4>
-          <p class="text-gray-300">Hockey is a term used to denote a family of various types of both summer and winter team sports <br> which originated on either an outdoor field</p>
-        </div>
-      </banner>
-      <!-- Professional Hockey's Club-->
-
-      <section>
-        
-      </section>
-    </main>
+     </section>
+  </main>
 </body>
 
 </html>
